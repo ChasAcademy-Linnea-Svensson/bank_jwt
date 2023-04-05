@@ -44,7 +44,6 @@ function Register() {
           password: '',
           password2: '',
         });
-        console.log(res);
       });
     } else {
       setColor('bg-red-200');
@@ -89,6 +88,7 @@ function Register() {
           value={formInfo.email}
           onChange={(e) => setFormInfo({ ...formInfo, email: e.target.value })}
         />
+        <label htmlFor='balance'>Balance:</label>
         <input
           type='number'
           id='balance'

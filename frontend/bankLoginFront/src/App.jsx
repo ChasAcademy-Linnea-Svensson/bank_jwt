@@ -26,10 +26,10 @@ function App() {
         <Route
           path='/'
           element={
-            <>
-              <h1>welcome to the bank</h1>
+            <div className='flex flex-col items-center justify-center mt-32'>
+              <h1 className='text-3xl'>Welcome to the bank</h1>
               <p>Please login or register a new account</p>
-            </>
+            </div>
           }
         />
         <Route path='/register' element={<Register />} />
