@@ -13,7 +13,7 @@ function Balance({ account }) {
         ?.split('=')[1];
 
       fetch(`http://localhost:5001/me/accounts/${account.id}`, {
-        method: 'POST',
+        method: 'PUT',
         cache: 'no-cache',
         headers: {
           accept: 'application/json',
@@ -37,7 +37,7 @@ function Balance({ account }) {
         ?.split('=')[1];
 
       fetch(`http://localhost:5001/me/accounts/${account.id}`, {
-        method: 'POST',
+        method: 'PUT',
         cache: 'no-cache',
         headers: {
           accept: 'application/json',

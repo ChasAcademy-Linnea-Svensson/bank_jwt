@@ -38,7 +38,7 @@ app.get('/me/accounts', authenticateAccessToken, (req, res) => {
   res.send(currAccount);
 });
 
-app.post('/me/accounts/:id', authenticateAccessToken, (req, res) => {
+app.put('/me/accounts/:id', authenticateAccessToken, (req, res) => {
   const userAccount = accounts.find(
     (acc) => req.id == acc.userId && acc.id == req.params.id
   );
